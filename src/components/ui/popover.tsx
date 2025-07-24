@@ -51,6 +51,10 @@ export const Popover: FC<Props> = ({ children, initialOpen = true }) => {
   );
 };
 
+interface SlotProps {
+  children: ReactElement;
+}
+
 export const Slot: FC<SlotProps> = ({ children, ...slotProps }) => {
   const childArray = Children.toArray(children);
 
@@ -91,11 +95,23 @@ export const PopoverContent = ({ children }: { children: ReactNode }) => {
 
   return (
     isOpen && (
-      <div className="flex fixed max-w-[400px] w-full bottom-1 right-10">{children}</div>
+      <div className="flex fixed max-w-[400px] w-full bottom-1 right-10">
+        {children}
+      </div>
     )
   );
 };
 
-interface SlotProps {
+export const PopoverClose = ({
+  children,
+  asChild,
+}: {
   children: ReactElement;
-}
+  asChild?: boolean;
+}) => {
+  const { close } = usePopupContext();
+
+  const Comp = asChild ? Slot : "button";
+
+  return <Comp onClick={() => close()}>{children}</Comp>;
+};

@@ -9,7 +9,7 @@ export const Button: React.FC<Props> = ({ className, ...props }) => {
   return (
     <button
       className={cn(
-        "p-[6px] cursor-pointer inline-flex justify-center items-center rounded-xl transition-all transition-300",
+        "p-[6px] min-h-8 text-sm cursor-pointer inline-flex justify-center items-center rounded-[6px] transition-all transition-300",
         className
       )}
       {...props}

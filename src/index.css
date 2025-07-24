@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 
-
-
-
 body {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 500;
@@ -51,4 +48,27 @@ body {
   --color-accent-5pct:   #00EC97; /*  5% */
 
   --color-black-10:      #1F1F29; 
+}
+
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-1 bg-neutral-600
+    
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply w-[6px]
+
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+
+    @apply w-[6px] bg-accent-700
+
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
 }
