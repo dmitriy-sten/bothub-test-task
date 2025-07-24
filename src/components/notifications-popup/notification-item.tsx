@@ -28,12 +28,12 @@ export const NotificationItem: React.FC<Props> = observer(
         <div className="py-3 flex items-start gap-2">
           <Notification className="text-neutral-50" />
           <div className="flex flex-col flex-1">
-            <h2 className="text-neutral-0 mb-1 ">{item.title}</h2>
-            <p className="text-neutral-100 font-normal mb-2">
+            <h2 className="text-neutral-0 mb-1 font-light ">{item.title}</h2>
+            <p className="text-neutral-100 font-light mb-2 line-clamp-3">
               {item.description}
             </p>
 
-            <p className="text-neutral-50/30 font-medium">{formatedDate}</p>
+            <p className="text-neutral-50/30 font-light">{formatedDate}</p>
           </div>
         </div>
         <Button className="flex-1 bg-neutral-500 text-neutral-0">

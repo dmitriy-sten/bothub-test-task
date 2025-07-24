@@ -5,6 +5,10 @@ export interface INotificationItem {
     image: string | null
     isReaded: boolean
     date: Date
+
+    coin?: string 
+    value?:number
+
 }
 
 
@@ -25,6 +29,8 @@ export const MOCKS: INotificationItem[] = [
         image: null,
         isReaded: false,
         date: new Date("2024-08-20T18:55:31.641280"),
+        coin:'BTC',
+        value: 100000
     },
     {
         id: "84d567d9-6438-45f3-93d2-b74baf37a52f",

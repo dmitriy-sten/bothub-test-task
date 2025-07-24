@@ -4,7 +4,6 @@ import React, {
   useState,
   type ReactNode,
 } from "react";
-import { MOCKS } from "../../store/constants";
 import { type INotificationItem } from "./../../store/constants";
 
 type Filters = "inbox" | "read";

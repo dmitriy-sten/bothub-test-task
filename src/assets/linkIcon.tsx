@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const LinkICon: React.FC<Props> = ({ className }) => {
+export const LinkIcon: React.FC<Props> = ({ className }) => {
   return (
     <svg
         className={className}
