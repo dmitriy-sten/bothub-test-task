@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+
+
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+}
+
+
+@theme {
+
+  --font-chakra-petch: "Chakra Petch", sans-serif;
+
+  /* — Neutral — */
+  --color-neutral-800: #17171E;
+  --color-neutral-700: #14141A;
+  --color-neutral-600: #1F1F29;
+  --color-neutral-500: #282834;
+  --color-neutral-400: #313140;
+  --color-neutral-300: #3A3A48;
+  --color-neutral-200: #5A5A63;
+  --color-neutral-100: #81818B;
+  --color-neutral-50:  #9F9FAE;
+  --color-neutral-0:   #EFEFF3;
+
+  /* — Accent — */
+  --color-accent-900:     #151D20;
+  --color-accent-800:     #152625;
+  --color-accent-700:     #20C98C;
+  --color-accent-600:     #0DDF94;
+  --color-accent-500:     #00EC97;
+  --color-accent-400:     #33F0AC;
+  --color-accent-300:     #54F2B9;
+  --color-accent-200:     #8AF6CF;
+  --color-accent-100:     #B0F9DF;
+  --color-accent-50:      #E6FDF5;
+  --color-accent-disabled: #37BE71;
+
+  --color-white-30:      #BEC2DA; /* 30% */
+  --color-white-20:      #BEC2DA; /* 20% */
+  --color-white-15:      #BEC2DA; /* 15% */
+  --color-white-10:      #BEC2DA; /* 10% */
+  --color-white-5:       #BEC2DA; /*  5% */
+  --color-white-2:       #BEC2DA; /*  2% */
+
+  --color-accent-50pct:  #00EC97; /* 50% */
+  --color-accent-40pct:  #00EC97; /* 40% */
+  --color-accent-5pct:   #00EC97; /*  5% */
+
+  --color-black-10:      #1F1F29; 
+}
